@@ -1,0 +1,157 @@
+/* public/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+li form {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li form input[type="text"],
+li form input[type="number"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+li form button {
+    margin-top: 10px;
+}
+
+li form[style="display:inline;"] {
+    display: inline-block;
+}
+
+li form[style="display:inline;"] button {
+    display: inline-block;
+}
+
+
+.assignment-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-details h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.assignment-details h3 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.assignment-details p {
+    font-size: 16px;
+    color: #666;
+}
+
+.assignment-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.assignment-details ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.assignment-details ul li strong {
+    font-weight: bold;
+}
+
+.assignment-details ul li em {
+    font-style: italic;
+    color: #007bff;
+}
+
