@@ -5,12 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start" : "node server.js"
-    
-  }, 
-  
-  
+    "build": "netlify deploy --prod",
+    "start": "node server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,7 +20,10 @@
     "express-session": "^1.18.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.2",
-    "node-polyfill-webpack-plugin": "^4.0.0"
+    "netlify-cli": "^17.33.5",
+    "netlify-lambda": "^2.0.16",
+    "node-polyfill-webpack-plugin": "^4.0.0",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -35,5 +35,4 @@
     "webpack-cli": "^5.1.4",
     "webpack-node-externals": "^3.0.0"
   }
-  
 }

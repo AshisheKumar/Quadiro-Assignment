@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-
+const serverless = require('serverless-http');
+const ServerlessHttp = require('serverless-http');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -18,6 +19,10 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }));
+
+
+const handler = ServerlessHttp(app);
+
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://ashishkumarr1108:Tarang123@cluster0.0gil2nn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
@@ -35,4 +40,9 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-module.exports = app;
+
+module.exports.handler = async(event,context)=>{
+    const result = await handler(event,context);
+    return result; 
+} 
+
